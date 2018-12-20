@@ -1170,7 +1170,7 @@ void perform_move(char * move)
 			return;
 		if(rock_checker('U'))
 			return;
-		switch(gs[PX-1][PY])//A F . W T R w G B E C s N n D d L S
+		switch(gs[PX-1][PY])
 		{
 			case 'A':
 				handle_ammo(move);
@@ -1234,7 +1234,7 @@ void perform_move(char * move)
 		}
 
 	}
-	else if(strcmp(move, "Down") ==0)//A F . W T R w G B E C s N n D d L S
+	else if(strcmp(move, "Down") ==0)
 	{
 		if(wall_checker('D'))
 			return;
